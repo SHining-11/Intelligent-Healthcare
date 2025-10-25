@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康乡村数智化服务大模型 - 挑战杯项目</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑", sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        /* 导航栏样式 */
+        nav {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+        }
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+        /* 头部横幅 */
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
+                        url("https://images.unsplash.com/photo-1552308995-2baac1ad5490?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 8rem 5%;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* 内容区块通用样式 */
+        .section {
+            padding: 5rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+        .section p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .section ul {
+            margin-left: 2rem;
+            line-height: 1.8;
+        }
+
+        /* 应用场景卡片 */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .card {
+            padding: 1.5rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 5%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-title">健康乡村数智化服务大模型</div>
+            <div class="nav-links">
+                <a href="#project">项目介绍</a>
+                <a href="#tech">核心技术</a>
+                <a href="#scene">应用场景</a>
+                <a href="#plan">项目计划</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 头部横幅 -->
+    <div class="hero">
+        <h1>健康乡村数智化服务大模型</h1>
+        <p>湖南工商大学“挑战杯”项目 | 聚焦基层医疗、慢病管理、医疗培训，助力乡村医疗资源优化升级</p>
+    </div>
+
+    <!-- 项目介绍区块 -->
+    <div class="section" id="project">
+        <h2>项目介绍</h2>
+        <p>本项目是面向健康乡村的“数智化”服务大模型，以国家乡村振兴与医疗改革政策为背景，针对基层医疗资源不足、服务能力薄弱等问题，构建适配乡村场景的轻量化大模型，提供精准诊疗、慢病管理等服务。</p>
+        <h3>项目背景</h3>
+        <ul>
+            <li>国家推进“健康中国”“乡村振兴”战略，基层医疗是关键环节</li>
+            <li>乡村医疗存在“资源缺口大、服务能力弱、精准性不足”等痛点</li>
+            <li>AI大模型技术为乡村医疗数智化提供了新的解决方案</li>
+        </ul>
+    </div>
+
+    <!-- 核心技术区块 -->
+    <div class="section" id="tech">
+        <h2>核心技术原理</h2>
+        <p>项目采用“三层架构+轻量化模型”设计，适配乡村终端设备与网络环境：</p>
+        <ul>
+            <li><strong>基础层</strong>：构建乡村医疗知识库（含常见病、慢病等数据）</li>
+            <li><strong>引擎层</strong>：轻量化大模型训练、推理能力实现</li>
+            <li><strong>应用层</strong>：诊疗辅助、慢病管理等功能模块</li>
+        </ul>
+        <h3>技术优势</h3>
+        <ul>
+            <li>轻量化：适配乡村低算力设备（如普通电脑、平板）</li>
+            <li>精准性：针对乡村常见病、地方病优化模型</li>
+            <li>低成本：降低基层医疗数智化的技术与硬件门槛</li>
+        </ul>
+    </div>
+
+    <!-- 应用场景区块 -->
+    <div class="section" id="scene">
+        <h2>核心应用场景</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>乡村卫生日常诊疗</h3>
+                <p>为村医提供常见病、多发病的辅助诊断建议，提升诊疗精准度，降低误诊率。</p>
+            </div>
+            <div class="card">
+                <h3>偏远地区慢病管理</h3>
+                <p>对高血压、糖尿病等慢病患者进行随访提醒、用药指导，实现长期健康监测。</p>
+            </div>
+            <div class="card">
+                <h3>基层医疗培训</h3>
+                <p>提供村医技能培训课程、模拟诊疗练习，提升基层医疗人员专业能力。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 项目计划区块 -->
+    <div class="section" id="plan">
+        <h2>项目研发计划</h2>
+        <ul>
+            <li><strong>试点部署阶段</strong>：选取1-2个乡村试点，完成模型适配与功能测试</li>
+            <li><strong>优化推广阶段</strong>：迭代模型功能，拓展试点范围至5-8个乡村</li>
+            <li><strong>持续迭代阶段</strong>：完善生态运营，实现长期价值挖掘</li>
+        </ul>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>湖南工商大学“挑战杯”大学生创业计划项目 © 2025</p>
+    </footer>
+</body>
+</html>
